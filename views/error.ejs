@@ -7,12 +7,37 @@
 
 <body>
 	<% include shared/menu %>
-		<div class="container">
+		<div class="container text-center p-3 mb-2 bg-light text-dark">
+			<br>
 			<div class="row">
 				<div class="col-lg col-md col-sm">
-					<h1>
-						<%= page %>
+					<h1 class="display-1">
+						Error
+						<span class="badge badge-danger">
+							<%= page %>
+						</span>
 					</h1>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col">
+					<h3 class="display-3">
+						<strong>
+							<%= message %>
+						</strong>
+					</h3>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col">
+					<p class="lead">
+						<a href="/" class="badge badge-warning">Regresar al inicio</a>
+					</p>
 				</div>
 			</div>
 		</div>
